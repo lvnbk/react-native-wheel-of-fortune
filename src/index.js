@@ -125,7 +125,7 @@ class WheelOfFortune extends Component {
             const winnerIndex = this._getwinnerIndex();
             this.setState({
                 finished: true,
-                start: false,
+                started: false,
                 winner: this._wheelPaths[winnerIndex].value
             });
             this.props.getWinner(this._wheelPaths[winnerIndex].value, winnerIndex)
